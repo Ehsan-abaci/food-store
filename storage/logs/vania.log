@@ -1,0 +1,30 @@
+[2024-06-15 20:05:02] ERROR: MySQLClientException: Can not prepare stmt: connection closed
+[2024-06-15 20:45:11] ERROR: TimeoutException after 0:00:10.000000: Future not completed
+[2024-06-16 13:08:53] ERROR: Null check operator used on a null value
+[2024-06-16 13:20:50] ERROR: Null check operator used on a null value
+[2024-06-16 13:21:02] ERROR: Null check operator used on a null value
+[2024-06-16 13:21:25] ERROR: Null check operator used on a null value
+[2024-06-16 13:22:50] ERROR: Null check operator used on a null value
+[2024-06-16 13:22:51] ERROR: Null check operator used on a null value
+[2024-06-16 13:22:51] ERROR: Null check operator used on a null value
+[2024-06-16 13:22:52] ERROR: Null check operator used on a null value
+[2024-06-16 13:22:52] ERROR: Null check operator used on a null value
+[2024-06-16 13:22:53] ERROR: Null check operator used on a null value
+[2024-06-16 13:23:02] ERROR: Null check operator used on a null value
+[2024-06-16 13:23:34] ERROR: Null check operator used on a null value
+[2024-06-16 13:23:43] ERROR: Null check operator used on a null value
+[2024-06-16 13:23:45] ERROR: Null check operator used on a null value
+[2024-06-16 13:23:53] ERROR: Null check operator used on a null value
+[2024-06-16 13:23:54] ERROR: Null check operator used on a null value
+[2024-06-16 13:24:05] ERROR: Null check operator used on a null value
+[2024-06-16 13:24:31] ERROR: Null check operator used on a null value
+[2024-06-16 13:24:32] ERROR: Null check operator used on a null value
+[2024-06-16 13:27:33] ERROR: Null check operator used on a null value
+[2024-06-16 13:27:34] ERROR: Null check operator used on a null value
+[2024-06-16 13:27:41] ERROR: Null check operator used on a null value
+[2024-06-16 13:35:27] ERROR: Null check operator used on a null value
+[2024-06-16 13:36:34] ERROR: Null check operator used on a null value
+[2024-06-16 13:36:49] ERROR: Null check operator used on a null value
+[2024-06-16 13:37:19] ERROR: Null check operator used on a null value
+[2024-06-16 13:37:29] ERROR: Null check operator used on a null value
+[2024-07-07 21:08:19] ERROR: MySQLClientException: Can not prepare stmt: connection closed
