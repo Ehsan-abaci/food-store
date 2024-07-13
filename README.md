@@ -1,16 +1,6 @@
-# food_store
+A complete food store application. The UI has written by Flutter and the backend has written by Vania framework.
 
-A new Flutter project.
 
-## Getting Started
+![iPhone 13   14 - 1](https://github.com/user-attachments/assets/dfb87d89-5b35-4c89-ad3b-f9ef55085d2c)
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![iPhone 13   14 - 2](https://github.com/user-attachments/assets/65ec6d1f-07d9-49c7-ae9e-b6d919a5319c)
