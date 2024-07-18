@@ -12,7 +12,7 @@ import 'package:food_store/src/views/home_view/food/food_bloc.dart';
 import 'package:food_store/src/views/home_view/list_food_item.dart';
 
 class FoodItem {
-  final Uint8List? foodImg;
+  final dynamic foodImg;
   final String foodName;
   final String categoryName;
   final String price;
@@ -42,7 +42,7 @@ class _HomePageState extends State<HomePage> {
     _allFoods = List.generate(
       3,
       (i) => FoodItem(
-        // foodImg: 'assets/images/food_${i + 1}.png',
+        foodImg: 'assets/images/food_${i + 1}.png',
         foodName: "Humburger",
         categoryName: "burger",
         price: "200.0",
@@ -189,7 +189,7 @@ class _HomePageState extends State<HomePage> {
   }
 
   _getCategoryListContent() {
-    var categories = <String>["All"];
+    var categories = <String>["All", "Pizza", "Sandwich", "Humberger"];
 
     return BlocBuilder<CategoryBloc, CategoryState>(
       builder: (context, state) {
@@ -267,38 +267,23 @@ class _HomePageState extends State<HomePage> {
             ],
           ),
         ),
-        BlocBuilder<FoodBloc, FoodState>(
-          builder: (context, state) {
-            _allFoods.clear();
-            if (state is FoodComplete) {
-              for (var f in state.popularFoods) {
-                _allFoods.add(FoodItem(
-                  foodImg: f.foodImg,
-                  foodName: f.foodName,
-                  categoryName: f.category.categoryName,
-                  price: f.foodPrice.toString(),
-                ));
-              }
-            }
-            return SizedBox(
-              height: 179,
-              width: MediaQuery.sizeOf(context).width,
-              child: ListView(
-                shrinkWrap: true,
-                padding: const EdgeInsets.only(left: 20),
-                scrollDirection: Axis.horizontal,
-                physics: AlwaysScrollableScrollPhysics(),
-                children: [
-                  ..._allFoods.map(
-                    (e) => ListFoodItem(
-                      foodItem: e,
-                    ),
-                  ),
-                ],
+        SizedBox(
+          height: 179,
+          width: MediaQuery.sizeOf(context).width,
+          child: ListView(
+            shrinkWrap: true,
+            padding: const EdgeInsets.only(left: 20),
+            scrollDirection: Axis.horizontal,
+            physics: AlwaysScrollableScrollPhysics(),
+            children: [
+              ..._allFoods.map(
+                (e) => ListFoodItem(
+                  foodItem: e,
+                ),
               ),
-            );
-          },
-        )
+            ],
+          ),
+        ),
       ],
     );
   }

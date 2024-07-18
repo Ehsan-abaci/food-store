@@ -10,6 +10,7 @@
 .svn/
 migrate_working_dir/
 
+
 # IntelliJ related
 *.iml
 *.ipr
@@ -25,12 +26,14 @@ assets/*.env
 **/doc/api/
 **/ios/Flutter/.last_build_id
 .dart_tool/
+.vscode/
 .flutter-plugins
 .flutter-plugins-dependencies
 .packages
 .pub-cache/
 .pub/
 /build/
+/assets/icons/*
 
 # Symbolication related
 app.*.symbols

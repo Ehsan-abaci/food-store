@@ -117,7 +117,7 @@ class PhotoHero extends StatelessWidget {
     this.onTap,
   });
   final String tag;
-  final Uint8List? photo;
+  final dynamic photo;
   final VoidCallback? onTap;
 
   @override
@@ -128,13 +128,13 @@ class PhotoHero extends StatelessWidget {
         color: Colors.transparent,
         child: InkWell(
           onTap: onTap,
-          child: photo != null
+          child: photo is Uint8List
               ? Image.memory(
                   photo!,
                   fit: BoxFit.fill,
                 )
               : Image.asset(
-                  'assets/images/food_1.png',
+                  photo,
                   fit: BoxFit.fill,
                 ),
         ),
